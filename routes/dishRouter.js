@@ -79,23 +79,6 @@ dishRouter.route('/:dishId')
     .catch((err) => next(err));
 });
 
-// dishRouter.route('/dishId/comments')
-// .get((req, res, next) => {
-//     Dishes.findById(req.params.dishId)
-//     .then((dish) => {
-//         if(dish != null) {
-//             res.statusCode = 200;
-//             res.setHeader('Content-Type', 'application/json');
-//             res.json(dish.comments)
-//         } else {
-//             err = new Error('Dish ' + req.params.dishId + ' not found');
-//             err.satus = 404;
-//             return next(err);
-//         }
-//     }, (err) => next(err))
-//     .catch((err) => next(err));
-// })
-
 dishRouter.route('/:dishId/comments')
 .get((req,res,next) => {
 
@@ -194,7 +177,7 @@ dishRouter.route('/:dishId/comments/:commentId')
 .put((req, res, next) => {
     Dishes.findById(req.params.dishId)
     .then((dish) => {
-        if(dish != null && dish.comments.id(req.params.commentId) != null) {
+        if(dish != null && dish.comments.id(req.params.commentId != null)) {
             if(req.body.rating) {
                 dish.comments.id(req.params.commentId).rating = req.body.rating;
             }
