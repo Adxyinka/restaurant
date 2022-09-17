@@ -1,0 +1,18 @@
+    {
+      "name": "fufu",
+      "image": "images/uthappizza.png",
+      "category": "mains",
+      "label": "Hot",
+      "price": "4.99",
+      "featured": "true",
+      "description": "A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.",
+      "comments": []
+    }
+
+    {
+    "username": "abisoye", "password": "password"
+}
+
+ordinary = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzFmYjY4Njc2NWIzZjIwNzBjNzg5NGIiLCJpYXQiOjE2NjMwMjcyNTMsImV4cCI6MTY2MzAzMDg1M30.SFQuTOqjg8rzCfu3a1jdtiN7IJ97kt29ZHfEA7e_ivs
+
+admin = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzFmYjY3OTc2NWIzZjIwNzBjNzg5NGEiLCJpYXQiOjE2NjMwMjc2MTQsImV4cCI6MTY2MzAzMTIxNH0.pRzWU0-45asopgLwvdSt0F0J658SH-GVNCh9DJeNQm8

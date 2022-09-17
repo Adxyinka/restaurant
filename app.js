@@ -2,7 +2,7 @@ var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
-var logger = require('morgan')
+var logger = require('morgan') 
 var session = require('express-session');
 var FileStore = require('session-file-store')(session);
 var authenticate = require('./authenticate');
@@ -27,6 +27,14 @@ connect.then((db) => {
 }, (err) => { console.log(err); });
 
 var app = express();
+
+app.all('*', (req, res, next) => {
+    if(req.secure) {
+        return next();
+    } else {
+        res.redirect(307, 'https://' + req.hostname + ':' + app.get('secPort'))
+    }
+})
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
